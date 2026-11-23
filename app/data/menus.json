@@ -1,0 +1,34 @@
+{
+  "campuses": [
+    {
+      "id": "student",
+      "name_ko": "학생회관 2층",
+      "name_zh": "学生馆 2 层",
+      "hours": "11:30–14:00",
+      "weekly": {
+        "mon": [{"food_id": "dakgalbi", "price": 6500}, {"food_id": "miyeokguk", "price": 0}, {"food_id": "kkakdugi", "price": 0}, {"food_id": "yogurt", "price": 0}],
+        "tue": [{"food_id": "bibimbap", "price": 6000}, {"food_id": "doenjang_jjigae", "price": 0}, {"food_id": "kimchi", "price": 0}, {"food_id": "banana", "price": 0}],
+        "wed": [{"food_id": "jeyuk", "price": 6500}, {"food_id": "kongnamul", "price": 0}, {"food_id": "kimchi", "price": 0}, {"food_id": "milk", "price": 0}],
+        "thu": [{"food_id": "donkatsu", "price": 7000}, {"food_id": "miyeokguk", "price": 0}, {"food_id": "kkakdugi", "price": 0}, {"food_id": "salad", "price": 0}],
+        "fri": [{"food_id": "curry", "price": 6000}, {"food_id": "sundubu", "price": 0}, {"food_id": "kimchi", "price": 0}, {"food_id": "apple", "price": 0}],
+        "sat": [{"food_id": "gimbap", "price": 3500}, {"food_id": "tteokbokki", "price": 3000}, {"food_id": "kimchi", "price": 0}, {"food_id": "yogurt", "price": 0}],
+        "sun": [{"food_id": "bibimbap", "price": 6000}, {"food_id": "doenjang_jjigae", "price": 0}, {"food_id": "kimchi", "price": 0}, {"food_id": "yogurt", "price": 0}]
+      }
+    },
+    {
+      "id": "engineering",
+      "name_ko": "공학관 식당",
+      "name_zh": "工科馆食堂",
+      "hours": "11:30–13:30",
+      "weekly": {
+        "mon": [{"food_id": "bulgogi_rice", "price": 6500}, {"food_id": "doenjang_jjigae", "price": 0}, {"food_id": "kimchi", "price": 0}, {"food_id": "milk", "price": 0}],
+        "tue": [{"food_id": "chicken", "price": 6000}, {"food_id": "salad", "price": 0}, {"food_id": "kkakdugi", "price": 0}, {"food_id": "apple", "price": 0}],
+        "wed": [{"food_id": "bibimbap", "price": 6000}, {"food_id": "miyeokguk", "price": 0}, {"food_id": "fried_egg", "price": 0}, {"food_id": "yogurt", "price": 0}],
+        "thu": [{"food_id": "samgyeopsal", "price": 7500}, {"food_id": "doenjang_jjigae", "price": 0}, {"food_id": "kimchi", "price": 0}, {"food_id": "white_rice", "price": 0}],
+        "fri": [{"food_id": "donkatsu", "price": 7000}, {"food_id": "kongnamul", "price": 0}, {"food_id": "kkakdugi", "price": 0}, {"food_id": "banana", "price": 0}],
+        "sat": [{"food_id": "jeyuk", "price": 6500}, {"food_id": "sundubu", "price": 0}, {"food_id": "kimchi", "price": 0}, {"food_id": "milk", "price": 0}],
+        "sun": [{"food_id": "ramyeon", "price": 3000}, {"food_id": "fried_egg", "price": 0}, {"food_id": "kimchi", "price": 0}, {"food_id": "apple", "price": 0}]
+      }
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#174A38">
+<title>한끼AI — 캠퍼스 식단관리</title>
+<link rel="manifest" href="/static/manifest.json">
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">한</span>
+      <span class="brand-name">한끼<span>AI</span></span>
+      <span class="brand-sub">一餐 AI</span>
+    </div>
+    <div class="top-actions">
+      <span class="live-dot" id="liveDot" title="API status"></span>
+      <button class="lang-btn" id="langBtn">中</button>
+      <a class="icon-btn" href="/docs" target="_blank" rel="noopener" title="API docs">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main class="views">
+    <!-- ================= TODAY ================= -->
+    <section class="view" id="view-today">
+      <div class="hello">
+        <div class="hello-copy">
+          <p class="date-line" id="dateLine">10월 27일 화요일</p>
+          <h1 id="helloTitle">오늘 점심,<br><em>620 kcal</em> 남았어요</h1>
+          <p class="hello-sub" id="helloSub">섭취 1,180 · 목표 1,800 kcal</p>
+        </div>
+        <div class="ring" id="ring" style="--p:66">
+          <div class="ring-inner"><b id="ringPct">66%</b><span id="ringLabel">달성</span></div>
+        </div>
+      </div>
+
+      <div class="mini-stats">
+        <div><span data-ko="단백질" data-zh="蛋白质">단백질</span><b id="todayProtein">0g</b></div>
+        <div><span data-ko="나트륨" data-zh="钠">나트륨</span><b id="todaySodium">0mg</b></div>
+        <div><span data-ko="기록" data-zh="记录">기록</span><b id="todayMeals">0</b></div>
+      </div>
+
+      <div class="section-head">
+        <h2 id="menuTitle">오늘의 학식</h2>
+        <a href="#" id="campusBtn" class="link">학생회관 2층 ›</a>
+      </div>
+      <div id="menuCard" class="card menu-card">
+        <div class="skeleton-line wide"></div>
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line short"></div>
+      </div>
+
+      <div class="tip" id="aiTip">
+        <span class="tip-icon">✦</span>
+        <div>
+          <b id="tipTitle">AI 한 끼 제안</b>
+          <p id="tipBody">국물은 절반만, 계란을 더하면 단백질 +6g</p>
+          <span class="cn" id="tipCn">汤喝一半，加个鸡蛋更均衡</span>
+        </div>
+      </div>
+
+      <div class="section-head small">
+        <h2 id="recentTitle">최근 기록</h2>
+        <a href="#" class="link" data-goto="report" id="reportLink">리포트 ›</a>
+      </div>
+      <div id="recentList" class="recent-list"></div>
+
+      <button class="fab" id="fabCamera">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3Z"/><circle cx="12" cy="13" r="4"/></svg>
+        <span id="fabLabel">사진으로 기록</span>
+      </button>
+    </section>
+
+    <!-- ================= CAMERA ================= -->
+    <section class="view" id="view-camera" hidden>
+      <div class="section-head">
+        <h2 id="cameraTitle">AI 식사 기록</h2>
+        <span class="step">CLIP · 30 classes</span>
+      </div>
+      <p class="lead" id="cameraLead">주요 음식 1–3개를 인식합니다. 결과는 항상 수정할 수 있어요.</p>
+
+      <div class="dropzone" id="dropzone">
+        <input id="fileInput" type="file" accept="image/*" capture="environment" hidden>
+        <div class="drop-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3Z"/><circle cx="12" cy="13" r="4"/></svg>
+        </div>
+        <b id="dropTitle">사진을 찍거나 업로드</b>
+        <span id="dropSub">JPG / PNG · 최대 12MB</span>
+      </div>
+
+      <div class="preview" id="previewWrap" hidden>
+        <img id="previewImg" alt="meal preview">
+        <button class="preview-close" id="clearImage" aria-label="remove">×</button>
+        <div class="preview-badge" id="previewBadge">READY</div>
+      </div>
+
+      <div class="samples-head">
+        <span id="samplesTitle">샘플로 체험</span>
+        <span class="tiny" id="samplesHint">API 없이 바로 인식</span>
+      </div>
+      <div class="samples" id="samples"></div>
+
+      <button class="btn primary block" id="predictBtn" disabled>
+        <span id="predictLabel">AI로 인식하기</span>
+        <span class="btn-arrow">→</span>
+      </button>
+
+      <div class="loading" id="loading" hidden>
+        <div class="spinner"></div>
+        <b id="loadingTitle">AI가 사진을 읽고 있어요</b>
+        <span id="loadingSub">CLIP zero-shot · CPU · 1–3초</span>
+      </div>
+
+      <div id="result" hidden>
+        <div class="result-head">
+          <div>
+            <h2 id="resultTitle">이렇게 인식했어요</h2>
+            <p id="resultSub" class="lead">결과가 다르면 직접 수정하세요.</p>
+          </div>
+          <span class="pill" id="resultCount">0개</span>
+        </div>
+
+        <div class="macro-grid" id="resultMacro"></div>
+        <div class="items" id="resultItems"></div>
+
+        <div class="alt-box">
+          <div class="alt-head"><b id="altTitle">다른 후보</b><span class="tiny" id="altHint">클릭해서 추가</span></div>
+          <div class="alts" id="alts"></div>
+        </div>
+
+        <div class="manual-add">
+          <select id="manualSelect"><option value="">+ 음식 직접 추가</option></select>
+          <button class="btn ghost small" id="manualAdd">추가</button>
+        </div>
+
+        <div class="result-actions">
+          <button class="btn primary block" id="saveMeal">이대로 기록하기</button>
+          <p class="tiny center" id="saveHint">저장 후 오늘 리포트에 반영됩니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= REPORT ================= -->
+    <section class="view" id="view-report" hidden>
+      <div class="section-head">
+        <h2 id="reportTitle">이번 주 리포트</h2>
+        <button class="icon-btn" id="shareReport" title="share">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 16V4"/><path d="M7 9l5-5 5 5"/><path d="M5 15v4h14v-4"/></svg>
+        </button>
+      </div>
+      <p class="lead" id="reportRange">—</p>
+
+      <div id="reportHeadline" class="report-headline"></div>
+      <div class="card chart-card">
+        <div class="chart-head"><b id="chartTitle">하루 단백질</b><span id="chartGoal">목표 105g</span></div>
+        <div class="chart" id="chart"></div>
+      </div>
+      <div class="insight-row" id="insightRow"></div>
+      <div class="streak" id="streakCard"></div>
+
+      <div class="section-head small">
+        <h2 id="logTitle">이번 주 기록</h2>
+        <span class="tiny" id="logHint">demo seed 포함</span>
+      </div>
+      <div id="reportMeals" class="recent-list"></div>
+      <div class="api-note">
+        <b>API</b>
+        <code>POST /api/predict</code> · <code>POST /api/meals</code> · <code>GET /api/report/week</code>
+        <a href="/docs" target="_blank" rel="noopener">Swagger →</a>
+      </div>
+    </section>
+  </main>
+
+  <nav class="tabbar">
+    <button class="tab active" data-view="today">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9.5 21v-6h5v6"/></svg>
+      <span data-ko="오늘" data-zh="今天">오늘</span>
+    </button>
+    <button class="tab" data-view="camera">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3Z"/><circle cx="12" cy="13" r="4"/></svg>
+      <span data-ko="기록" data-zh="记录">기록</span>
+    </button>
+    <button class="tab" data-view="report">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V10M10 19V5M16 19v-6M22 19H2"/></svg>
+      <span data-ko="리포트" data-zh="报告">리포트</span>
+    </button>
+    <a class="tab" href="/share/" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+      <span data-ko="소개" data-zh="介绍">소개</span>
+    </a>
+  </nav>
+  <div class="toast" id="toast"></div>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>

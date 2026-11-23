@@ -1,0 +1,530 @@
+[
+  {
+    "id": "bibimbap",
+    "ko": "비빔밥",
+    "zh": "拌饭",
+    "category": "rice",
+    "serving": "1碗 450g",
+    "kcal": 560,
+    "protein": 18,
+    "carbs": 85,
+    "fat": 15,
+    "sodium": 900,
+    "prompts": [
+      "a bowl of bibimbap, Korean mixed rice with vegetables and a fried egg",
+      "Korean rice bowl with colorful vegetables, beef and egg",
+      "bibimbap served in a white bowl",
+      "비빔밥"
+    ]
+  },
+  {
+    "id": "dakgalbi",
+    "ko": "닭갈비덮밥",
+    "zh": "辣炒鸡肉盖饭",
+    "category": "rice",
+    "serving": "1份 550g",
+    "kcal": 780,
+    "protein": 32,
+    "carbs": 100,
+    "fat": 26,
+    "sodium": 1200,
+    "prompts": [
+      "a bowl of dakgalbi rice, spicy Korean chicken stir-fry over rice",
+      "spicy chicken and vegetables on top of white rice",
+      "Korean spicy chicken rice bowl",
+      "닭갈비덮밥"
+    ]
+  },
+  {
+    "id": "jeyuk",
+    "ko": "제육덮밥",
+    "zh": "辣炒猪肉盖饭",
+    "category": "rice",
+    "serving": "1份 550g",
+    "kcal": 700,
+    "protein": 28,
+    "carbs": 95,
+    "fat": 22,
+    "sodium": 1100,
+    "prompts": [
+      "a bowl of jeyuk rice, spicy Korean pork stir-fry over rice",
+      "spicy pork and vegetables on top of rice",
+      "Korean pork rice bowl",
+      "제육덮밥"
+    ]
+  },
+  {
+    "id": "bulgogi_rice",
+    "ko": "불고기덮밥",
+    "zh": "烤牛肉盖饭",
+    "category": "rice",
+    "serving": "1份 550g",
+    "kcal": 650,
+    "protein": 30,
+    "carbs": 90,
+    "fat": 18,
+    "sodium": 1000,
+    "prompts": [
+      "a bowl of bulgogi rice, Korean marinated beef over rice",
+      "sweet soy marinated beef with rice",
+      "Korean beef rice bowl",
+      "불고기덮밥"
+    ]
+  },
+  {
+    "id": "curry",
+    "ko": "카레라이스",
+    "zh": "咖喱饭",
+    "category": "rice",
+    "serving": "1份 500g",
+    "kcal": 620,
+    "protein": 16,
+    "carbs": 95,
+    "fat": 18,
+    "sodium": 900,
+    "prompts": [
+      "a plate of Korean curry rice with yellow curry sauce",
+      "curry and rice on a white plate",
+      "Japanese style curry rice",
+      "카레라이스"
+    ]
+  },
+  {
+    "id": "kimchi_jjigae",
+    "ko": "김치찌개",
+    "zh": "泡菜汤",
+    "category": "soup",
+    "serving": "1碗 400g",
+    "kcal": 250,
+    "protein": 15,
+    "carbs": 12,
+    "fat": 14,
+    "sodium": 1200,
+    "prompts": [
+      "a bowl of kimchi jjigae, Korean kimchi stew with pork and tofu, red broth, rice on the side",
+      "Korean kimchi stew in a black stone pot with a bowl of white rice",
+      "red spicy Korean stew with aged kimchi and pork, no egg",
+      "김치찌개"
+    ]
+  },
+  {
+    "id": "doenjang_jjigae",
+    "ko": "된장찌개",
+    "zh": "大酱汤",
+    "category": "soup",
+    "serving": "1碗 400g",
+    "kcal": 180,
+    "protein": 12,
+    "carbs": 14,
+    "fat": 9,
+    "sodium": 1000,
+    "prompts": [
+      "a bowl of doenjang jjigae, Korean soybean paste stew with tofu and vegetables",
+      "brown Korean soybean paste soup",
+      "Korean miso stew",
+      "된장찌개"
+    ]
+  },
+  {
+    "id": "sundubu",
+    "ko": "순두부찌개",
+    "zh": "嫩豆腐汤",
+    "category": "soup",
+    "serving": "1碗 450g",
+    "kcal": 220,
+    "protein": 16,
+    "carbs": 10,
+    "fat": 12,
+    "sodium": 900,
+    "prompts": [
+      "a bowl of sundubu jjigae, Korean soft tofu stew with a cracked egg on top, red broth",
+      "bubbling spicy soft tofu soup with silken tofu and egg yolk",
+      "Korean silken tofu stew in a stone pot",
+      "순두부찌개"
+    ]
+  },
+  {
+    "id": "miyeokguk",
+    "ko": "미역국",
+    "zh": "海带汤",
+    "category": "soup",
+    "serving": "1碗 350g",
+    "kcal": 90,
+    "protein": 5,
+    "carbs": 8,
+    "fat": 4,
+    "sodium": 700,
+    "prompts": [
+      "a bowl of miyeokguk, Korean seaweed soup",
+      "clear soup with green seaweed",
+      "Korean birthday seaweed soup",
+      "미역국"
+    ]
+  },
+  {
+    "id": "kongnamul",
+    "ko": "콩나물국",
+    "zh": "豆芽汤",
+    "category": "soup",
+    "serving": "1碗 350g",
+    "kcal": 45,
+    "protein": 3,
+    "carbs": 4,
+    "fat": 2,
+    "sodium": 600,
+    "prompts": [
+      "a bowl of kongnamul guk, Korean bean sprout soup",
+      "clear soup with soybean sprouts",
+      "Korean bean sprout soup",
+      "콩나물국"
+    ]
+  },
+  {
+    "id": "gimbap",
+    "ko": "김밥",
+    "zh": "紫菜包饭",
+    "category": "rice",
+    "serving": "1条 250g",
+    "kcal": 480,
+    "protein": 14,
+    "carbs": 75,
+    "fat": 12,
+    "sodium": 800,
+    "prompts": [
+      "a roll of gimbap, Korean seaweed rice roll sliced into pieces",
+      "sliced kimbap with rice and vegetables",
+      "Korean seaweed rice roll",
+      "김밥"
+    ]
+  },
+  {
+    "id": "ramyeon",
+    "ko": "라면",
+    "zh": "拉面",
+    "category": "noodle",
+    "serving": "1包 550g",
+    "kcal": 500,
+    "protein": 10,
+    "carbs": 70,
+    "fat": 18,
+    "sodium": 1800,
+    "prompts": [
+      "a pot of Korean ramyeon, spicy instant noodles with broth",
+      "spicy red noodle soup in a pot",
+      "Korean instant ramen",
+      "라면"
+    ]
+  },
+  {
+    "id": "tteokbokki",
+    "ko": "떡볶이",
+    "zh": "辣炒年糕",
+    "category": "snack",
+    "serving": "1份 300g",
+    "kcal": 400,
+    "protein": 8,
+    "carbs": 80,
+    "fat": 6,
+    "sodium": 1200,
+    "prompts": [
+      "a plate of tteokbokki, Korean spicy rice cakes in red sauce",
+      "red spicy Korean rice cake",
+      "cylindrical rice cakes with gochujang sauce",
+      "떡볶이"
+    ]
+  },
+  {
+    "id": "donkatsu",
+    "ko": "돈까스",
+    "zh": "炸猪排",
+    "category": "fried",
+    "serving": "1份 300g",
+    "kcal": 850,
+    "protein": 30,
+    "carbs": 80,
+    "fat": 40,
+    "sodium": 1300,
+    "prompts": [
+      "a plate of donkatsu, Japanese Korean breaded pork cutlet with sauce",
+      "fried pork cutlet with cabbage salad",
+      "panko breaded pork cutlet",
+      "돈까스"
+    ]
+  },
+  {
+    "id": "chicken",
+    "ko": "치킨",
+    "zh": "炸鸡",
+    "category": "fried",
+    "serving": "2块 200g",
+    "kcal": 480,
+    "protein": 35,
+    "carbs": 20,
+    "fat": 28,
+    "sodium": 1100,
+    "prompts": [
+      "Korean fried chicken pieces with crispy coating",
+      "fried chicken on a plate",
+      "crispy Korean chicken",
+      "치킨"
+    ]
+  },
+  {
+    "id": "samgyeopsal",
+    "ko": "삼겹살",
+    "zh": "五花肉",
+    "category": "meat",
+    "serving": "200g",
+    "kcal": 600,
+    "protein": 34,
+    "carbs": 2,
+    "fat": 50,
+    "sodium": 800,
+    "prompts": [
+      "grilled Korean pork belly slices, samgyeopsal",
+      "thick slices of grilled pork belly",
+      "Korean BBQ pork belly",
+      "삼겹살"
+    ]
+  },
+  {
+    "id": "bulgogi",
+    "ko": "불고기",
+    "zh": "烤牛肉",
+    "category": "meat",
+    "serving": "200g",
+    "kcal": 300,
+    "protein": 25,
+    "carbs": 10,
+    "fat": 18,
+    "sodium": 700,
+    "prompts": [
+      "a plate of Korean bulgogi, marinated grilled beef",
+      "sweet soy marinated beef slices",
+      "Korean BBQ beef",
+      "불고기"
+    ]
+  },
+  {
+    "id": "japchae",
+    "ko": "잡채",
+    "zh": "杂菜",
+    "category": "side",
+    "serving": "1份 200g",
+    "kcal": 280,
+    "protein": 8,
+    "carbs": 40,
+    "fat": 10,
+    "sodium": 800,
+    "prompts": [
+      "a plate of japchae, Korean glass noodles with vegetables",
+      "translucent sweet potato noodles with vegetables",
+      "Korean stir fried glass noodles",
+      "잡채"
+    ]
+  },
+  {
+    "id": "fried_egg",
+    "ko": "계란후라이",
+    "zh": "煎蛋",
+    "category": "side",
+    "serving": "1个 50g",
+    "kcal": 90,
+    "protein": 7,
+    "carbs": 1,
+    "fat": 7,
+    "sodium": 200,
+    "prompts": [
+      "a fried egg sunny side up",
+      "one fried egg on a plate",
+      "계란후라이"
+    ]
+  },
+  {
+    "id": "tofu",
+    "ko": "두부",
+    "zh": "豆腐",
+    "category": "side",
+    "serving": "100g",
+    "kcal": 90,
+    "protein": 9,
+    "carbs": 3,
+    "fat": 5,
+    "sodium": 10,
+    "prompts": [
+      "a slice of plain tofu on a plate",
+      "white tofu cubes",
+      "두부"
+    ]
+  },
+  {
+    "id": "kimchi",
+    "ko": "김치",
+    "zh": "泡菜",
+    "category": "side",
+    "serving": "1小碟 50g",
+    "kcal": 15,
+    "protein": 1,
+    "carbs": 2,
+    "fat": 0,
+    "sodium": 300,
+    "prompts": [
+      "a small dish of kimchi, red Korean fermented cabbage",
+      "red spicy cabbage side dish",
+      "김치"
+    ]
+  },
+  {
+    "id": "kkakdugi",
+    "ko": "깍두기",
+    "zh": "萝卜泡菜",
+    "category": "side",
+    "serving": "1小碟 50g",
+    "kcal": 15,
+    "protein": 1,
+    "carbs": 2,
+    "fat": 0,
+    "sodium": 250,
+    "prompts": [
+      "a small dish of kkakdugi, red Korean radish kimchi",
+      "cubed radish kimchi",
+      "깍두기"
+    ]
+  },
+  {
+    "id": "yogurt",
+    "ko": "요구르트",
+    "zh": "酸奶",
+    "category": "drink",
+    "serving": "1瓶 150ml",
+    "kcal": 45,
+    "protein": 1,
+    "carbs": 9,
+    "fat": 0,
+    "sodium": 40,
+    "prompts": [
+      "a small bottle of Korean yogurt drink",
+      "sweet yogurt drink",
+      "요구르트"
+    ]
+  },
+  {
+    "id": "milk",
+    "ko": "우유",
+    "zh": "牛奶",
+    "category": "drink",
+    "serving": "200ml",
+    "kcal": 130,
+    "protein": 6,
+    "carbs": 10,
+    "fat": 7,
+    "sodium": 100,
+    "prompts": [
+      "a glass of milk",
+      "white milk in a cup",
+      "우유"
+    ]
+  },
+  {
+    "id": "banana",
+    "ko": "바나나",
+    "zh": "香蕉",
+    "category": "fruit",
+    "serving": "1根 100g",
+    "kcal": 90,
+    "protein": 1,
+    "carbs": 23,
+    "fat": 0,
+    "sodium": 1,
+    "prompts": [
+      "a ripe yellow banana",
+      "banana on a table",
+      "바나나"
+    ]
+  },
+  {
+    "id": "apple",
+    "ko": "사과",
+    "zh": "苹果",
+    "category": "fruit",
+    "serving": "1个 200g",
+    "kcal": 80,
+    "protein": 0,
+    "carbs": 21,
+    "fat": 0,
+    "sodium": 1,
+    "prompts": [
+      "a red apple",
+      "apple fruit on a table",
+      "사과"
+    ]
+  },
+  {
+    "id": "sweet_potato",
+    "ko": "고구마",
+    "zh": "红薯",
+    "category": "staple",
+    "serving": "1个 150g",
+    "kcal": 130,
+    "protein": 2,
+    "carbs": 30,
+    "fat": 0,
+    "sodium": 20,
+    "prompts": [
+      "a baked sweet potato",
+      "purple skinned sweet potato",
+      "고구마"
+    ]
+  },
+  {
+    "id": "brown_rice",
+    "ko": "현미밥",
+    "zh": "糙米饭",
+    "category": "staple",
+    "serving": "1碗 200g",
+    "kcal": 300,
+    "protein": 6,
+    "carbs": 65,
+    "fat": 2,
+    "sodium": 5,
+    "prompts": [
+      "a bowl of brown rice",
+      "cooked brown rice in a bowl",
+      "현미밥"
+    ]
+  },
+  {
+    "id": "white_rice",
+    "ko": "흰밥",
+    "zh": "白米饭",
+    "category": "staple",
+    "serving": "1碗 200g",
+    "kcal": 310,
+    "protein": 6,
+    "carbs": 68,
+    "fat": 1,
+    "sodium": 5,
+    "prompts": [
+      "a bowl of plain white rice",
+      "steamed white rice",
+      "흰밥"
+    ]
+  },
+  {
+    "id": "salad",
+    "ko": "샐러드",
+    "zh": "沙拉",
+    "category": "side",
+    "serving": "1份 150g",
+    "kcal": 120,
+    "protein": 4,
+    "carbs": 10,
+    "fat": 7,
+    "sodium": 300,
+    "prompts": [
+      "a bowl of fresh green salad",
+      "mixed vegetables salad",
+      "샐러드"
+    ]
+  }
+]

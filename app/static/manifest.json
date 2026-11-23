@@ -1,0 +1,11 @@
+{
+  "name": "한끼AI — 캠퍼스 식단관리",
+  "short_name": "한끼AI",
+  "description": "사진 한 장으로 끝나는 한국 캠퍼스 식단관리",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F6F1E7",
+  "theme_color": "#174A38",
+  "lang": "ko",
+  "icons": []
+}

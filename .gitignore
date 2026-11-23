@@ -1,0 +1,29 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# App runtime
+app/data/hf/
+app/data/cache/
+app/data/hankki.db
+app/data/hankki.db-*
+app/uploads/*
+!app/uploads/.gitkeep
+
+# Android build outputs
+android/HankkiAI/build_apk/
+android/HankkiAI/*.idsig
+
+# Tools / archives
+tools/
+*.zip
+*.7z
+*.tar.gz
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
