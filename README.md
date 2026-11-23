@@ -6,6 +6,8 @@
 > 산학연계 SW프로젝트(마이크로스톤) 결과물  
 > 사진 기반 AI 식품 영양 분석 및 식단 관리 서비스
 
+![GitHub repository](images/github_repo.png)
+
 ---
 
 ## 1. 프로젝트 소개
