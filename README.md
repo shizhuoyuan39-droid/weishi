@@ -41,6 +41,11 @@
 > Top-1 80%는 **목표**이며 실제 달성 수치가 아니다.  
 > APK는 서버 URL을 로드하는 WebView 껍데기이며, 서버가 꺼지면 동작하지 않는다.
 
+**Demo (임시 터널):** https://homepage-equilibrium-mapping-alpine.trycloudflare.com/  
+**API Docs:** https://homepage-equilibrium-mapping-alpine.trycloudflare.com/docs
+
+> Cloudflare quick tunnel은 임시 URL이라 며칠 뒤 만료될 수 있다. 재실행 방법은 `app/README.md` 참고.
+
 ### 샘플 3장 결과
 
 | 음식 | Top-1 confidence |

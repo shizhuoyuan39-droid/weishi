@@ -35,7 +35,7 @@
 | 핵심 산출물 | 웹/PWA, FastAPI, SQLite, 30종 영양 DB, Android APK, API 문서, HWP 보고서 |
 | 데모 | https://rabbit-hans-happen-europe.trycloudflare.com/ |
 | API 문서 | https://rabbit-hans-happen-europe.trycloudflare.com/docs |
-| GitHub | `[GitHub 저장소 URL]` (아직 실제 URL 없음) |
+| GitHub | `https://github.com/shizhuoyuan39-droid/weishi` (아직 실제 URL 없음) |
 
 ### 제품 포지셔닝
 
@@ -356,7 +356,7 @@ file=@bibimbap.jpg
 | 기업체 | 1명 (`[멘토명]`) |
 | 총참여인원 | 6명 |
 | 수행기간 | 2026.04.01. ~ 2026.08.30. |
-| 오픈소스주소 | `[GitHub 저장소 URL]` + 첫 페이지 캡처 |
+| 오픈소스주소 | `https://github.com/shizhuoyuan39-droid/weishi` + 첫 페이지 캡처 |
 
 ### 10.2 추진배경 (복사용)
 
@@ -381,7 +381,7 @@ file=@bibimbap.jpg
 ### 10.5 오픈소스주소
 
 ```
-[GitHub 저장소 URL]
+https://github.com/shizhuoyuan39-droid/weishi
 - 저장소 첫 페이지 캡처 (README, 폴더 구조, 커밋이 보이게)
 - 실행 방법은 README.md에 정리
 ```
@@ -497,7 +497,7 @@ B. 장학금 신청서
 - 조선일보(2026 유학생 통계): https://cnnews.chosun.com/client/news/viw.asp?cate=C01&mcate=M1001&nNewsNumb=20260965374&nidx=65375
 - K-FIND: https://www.ksen.co.kr/news/article.html?no=220224
 - AI Hub: https://www.aihub.or.kr/aihubdata/data/view.do?aihubDataSe=data&dataSetSn=74
-- GitHub: `[GitHub 저장소 URL]`
+- GitHub: `https://github.com/shizhuoyuan39-droid/weishi`
 
 ---
 
