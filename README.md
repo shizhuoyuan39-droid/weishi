@@ -188,6 +188,9 @@ S/M/L portion multiplier (0.75 / 1.0 / 1.25)
 
 | 파일 | 내용 |
 |---|---|
+| `docs/report_table.xlsx` | **결과보고서 작성표 (빈칸 포함)** — 엑셀에서 바로 채우기 |
+| `docs/report_table.docx` | 같은 작성표 Word 버전 |
+| `docs/report_table.pdf` | 같은 작성표 PDF (인쇄/열람용) |
 | `docs/plan_ko_zh.pdf` | 22-page 제품 기획서 (중문 + 한국어 부록) |
 | `docs/ai_context.md` | 다른 AI에게 첨부해 보고서를 쓰게 하는 전체 사실 자료 |
 | `docs/hwp_guide.pdf` | HWP 양식 칸별 작성 가이드 |
